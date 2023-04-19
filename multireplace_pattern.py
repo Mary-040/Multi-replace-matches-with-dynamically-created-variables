@@ -14,7 +14,8 @@ def replace_with_variables(input_string: str, pattern: str) -> str:
     """
 
     match_count = 0
-
+    
+    # Note that even though the 'm' parameter is not further used here, it is required for the code to work because it holds the matches found.
     def replacement(m):
         nonlocal match_count
         match_count += 1
